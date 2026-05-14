@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Salary Lookup</h1>
+    <p class="subtitle">Fast salary searching tool</p>
+
+    <div class="form-box">
+
+        <input
+                type="text"
+                id="range"
+                placeholder="Range #"
+        >
+
+        <input
+                type="number"
+                id="year"
+                placeholder="Year #"
+                min="1"
+                max="21"
+        >
+
+        <button onclick="searchSalary()">
+            Search
+        </button>
+
+    </div>
+
+    <div id="result" class="result hidden">
+        <h2 id="jobTitle"></h2>
+
+        <div class="salary-card">
+            <span>Hourly Salary</span>
+            <strong id="hourly"></strong>
+        </div>
+
+        <div class="salary-card">
+            <span>Monthly Salary</span>
+            <strong id="monthly"></strong>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
