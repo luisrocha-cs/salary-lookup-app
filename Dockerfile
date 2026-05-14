@@ -4,7 +4,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Copy project
-COPY src .
+COPY demo/src .
 
 # Build the project
 RUN ./mvnw clean package -DskipTests
